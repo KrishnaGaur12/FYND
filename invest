@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .see-all {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+        }
+        .see-all::after {
+            content: '→';
+            margin-left: 5px;
+        }
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .category {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: box-shadow 0.3s ease;
+        }
+        .category:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+        .category img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 15px;
+        }
+        .category h3 {
+            font-size: 16px;
+            margin: 0;
+            color: #333;
+        }
+        @media (max-width: 768px) {
+            .categories {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Categories</h1>
+            <a href="#" class="see-all">See all</a>
+        </div>
+        <div class="categories">
+            <div class="category">
+                <img src="medical-app.png" alt="Medical" width="60" height="60">
+                <h3>Medical</h3>
+            </div>
+            <div class="category">
+                <img src="sos.png" alt="SOS" width="60" height="60">
+                <h3>SOS</h3>
+            </div>
+            <div class="category">
+                <img src="emergency.svg" alt="Emergency" width="60" height="60">
+                <h3>Emergency</h3>
+            </div>
+            <div class="category">
+                <img src="agriculture.svg" alt="Environment" width="60" height="60">
+                <h3>Environment</h3>
+            </div>
+            <div class="category">
+                <img src="circled-dollar-sign-with-overlaid-backslash.svg" alt="Nonprofit" width="60" height="60">
+                <h3>Nonprofit</h3>
+            </div>
+            <div class="category">
+                <img src="fin.svg" alt="Financial Emergency" width="60" height="60">
+                <h3>Financial Emergency</h3>
+            </div>
+            <div class="category">
+                <img src="bird.svg" alt="Animals" width="60" height="60">
+                <h3>Animals</h3>
+            </div>
+            <div class="category">
+                <img src="warning-sign.svg" alt="Crisis Relief" width="60" height="60">
+                <h3>Crisis Relief</h3>
+            </div>
+            <div class="category">
+                <img src="mobile-phone.svg" alt="Technology" width="60" height="60">
+                <h3>Technology</h3>
+            </div>
+            <div class="category">
+                <img src="video.svg" alt="Film & Videos" width="60" height="60">
+                <h3>Film & Videos</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Fundraise Online</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFCFB3;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: linear-gradient(to right, #FFCFB3, #E78F81);
+        }
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            background-color: #fff;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header {
+            font-size: 38px;
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 40px;
+            letter-spacing: 1px;
+        }
+        .steps {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        .step {
+            flex: 1;
+            margin: 10px;
+            padding: 25px;
+            background-color: #fdfdfd;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+        .step:hover {
+            transform: translateY(-10px);
+        }
+        .step img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 20px;
+            border-radius: 50%;
+            border: 3px solid #FFCFB3;
+            padding: 10px;
+            background-color: #fff;
+        }
+        .step h3 {
+            margin: 15px 0;
+            font-size: 24px;
+            color: #444;
+            font-weight: 600;
+        }
+        .step p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+        }
+        .testimonials {
+            margin-top: 40px;
+        }
+        .testimonial {
+            margin-bottom: 30px;
+            font-style: italic;
+            color: #333;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+        .testimonial p {
+            margin: 5px 0;
+        }
+        .testimonial p:first-child {
+            font-size: 18px;
+            color: #444;
+        }
+        .testimonial p:last-child {
+            font-size: 14px;
+            color: #888;
+        }
+        .footer {
+            width: 100%;
+            background-color: #333;
+            color: #000;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer p {
+            margin: 5px 0;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">How to Fundraise Online</div>
+        <div class="steps">
+            <div class="step">
+                <img src="fund3.png" alt="Start Fundraiser">
+                <h3>1. Start Your Fundraiser</h3>
+                <p>Create a campaign quickly and easily to raise funds for your cause.</p>
+            </div>
+            <div class="step">
+                <img src="frie.png" alt="Share with Friends">
+                <h3>2. Share with Friends</h3>
+                <p>Leverage social media and personal networks to spread the word.</p>
+            </div>
+            <div class="step">
+                <img src="fund1.png" alt="Manage Donations">
+                <h3>3. Manage Donations</h3>
+                <p>Track your donations and engage with supporters to ensure success.</p>
+            </div>
+        </div>
+        <div class="testimonials">
+            <div class="testimonial">
+                <p>"FYND made fundraising so simple and effective!"</p>
+                <p>- Jane, Event Organizer</p>
+            </div>
+            <div class="testimonial">
+                <p>"We exceeded our goals thanks to FYND"</p>
+                <p>- John, Campaign Leader</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FYND - Foster Your New Dreams</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'fynd-orange': '#ff6600',
+                        'light-green': '#FFF0D1',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+    
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="fixed w-full z-10 transition-all duration-300" id="header">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-3xl font-bold text-fynd-orange">FYND</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="http://127.0.0.1:3002/how it works" class="text-white hover:text-fynd-orange transition-colors duration-300">How it works</a>
+                <a href="http://127.0.0.1:3002/START UR CAMP" class="text-white hover:text-fynd-orange transition-colors duration-300">Campaigns</a>
+                <a href="http://127.0.0.1:3002/invest" class="text-white hover:text-fynd-orange transition-colors duration-300">Invest ▼</a>
+                <a href="http://127.0.0.1:3002/search" class="text-white hover:text-fynd-orange transition-colors duration-300">Search</a>
+                <a href="http://127.0.0.1:3002/START UR CAMP" class="text-white hover:text-fynd-orange transition-colors duration-300">Start a campaign</a>
+                <a href="http://127.0.0.1:3002/sign in" class="text-white hover:text-fynd-orange transition-colors duration-300">Sign In</a>
+            </nav>
+            <button class="md:hidden text-white" id="menuToggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <div class="fixed inset-0 z-20 bg-gray-900 pt-16 hidden" id="mobileMenu">
+        <nav class="flex flex-col items-center space-y-4 p-4">
+            <a href="#" class="text-white hover:text-fynd-orange transition-colors duration-300">How it works</a>
+            <a href="#" class="text-white hover:text-fynd-orange transition-colors duration-300">Campaigns</a>
+            <a href="#" class="text-white hover:text-fynd-orange transition-colors duration-300">Invest</a>
+            <a href="#" class="text-white hover:text-fynd-orange transition-colors duration-300">Search</a>
+            <a href="http://127.0.0.1:3002/START UR CAMP" class="text-white hover:text-fynd-orange transition-colors duration-300">Start a campaign</a>
+            <a href="#" class="text-white hover:text-fynd-orange transition-colors duration-300">My dashboard</a>
+        </nav>
+    </div>
+
+    <main class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <video autoplay muted loop class="absolute w-full h-full object-cover">
+            <source src="DOLLY.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div class="relative z-10 text-center px-4">
+            <button class="bg-fynd-orange text-white px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-colors duration-300 mb-8 transform hover:scale-105">
+                Make It Happen
+            </button>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in-up">
+                LET US HELP TO <span class="text-fynd-orange">FOSTER YOUR </span> NEXT DREAM
+            </h1>
+            <p class="text-xl md:text-2xl mb-12 max-w-2xl mx-auto animate-fade-in-up">
+                Join us and be part of something special. Together we can make a difference and bring your dreams to reality.
+            </p>
+            <div class="space-x-4 animate-fade-in-up">
+                <button class="bg-white text-gray-900 px-8 py-3 rounded-full font-semibold hover:bg-gray-200 transition-colors duration-300 transform hover:scale-105">
+                    Start a campaign
+                </button>
+                <button class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-gray-900 transition-colors duration-300 transform hover:scale-105">
+                    Explore now
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <section class="bg-light-green text-gray-900 py-16">
+        <div class="container mx-auto px-4">
+            <div class="inline-block bg-fynd-orange text-white px-4 py-2 rounded-full mb-4">
+                ABOUT US
+            </div>
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">More People More Impact</h2>
+            <p class="text-xl mb-8 max-w-3xl">
+                Because together, we can make a real difference. Our volunteers service in a variety of roles according to their skills and interests.
+            </p>
+        </div>
+    </section>
+
+    <section class="bg-white text-gray-900 py-16">
+        <div class="container mx-auto px-4">
+            <div class="inline-block bg-fynd-orange text-white px-4 py-2 rounded-full mb-4">
+                WHAT TO EXPECT
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">
+                FYND exists to support social impact projects, enterprises and founders. What good can we help you start?
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-100 rounded-lg overflow-hidden">
+                    <img src="commu.png" alt="Community" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Community</h3>
+                        <p class="mb-4">Together we are stronger than alone. Find your peers and learn from others. Join our founder community or come to an event featuring leading social entrepreneurs from around the world.</p>
+                        <a href="#" class="text-fynd-orange font-semibold hover:underline">Check out what's on</a>
+                    </div>
+                </div>
+                <div class="bg-gray-100 rounded-lg overflow-hidden">
+                    <img src="edu.png" alt="Education" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Education</h3>
+                        <p class="mb-4">Make your social enterprise (or "dream project") a reality. Learn the keys to success and avoid the common missteps through one of our programs, working alongside other founders.</p>
+                        <a href="#" class="text-fynd-orange font-semibold hover:underline">Learn more about upcoming programs and opportunities</a>
+                    </div>
+                </div>
+                <div class="bg-gray-100 rounded-lg overflow-hidden">
+                    <img src="coins.png" alt="Crowdfunding" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Crowdfunding</h3>
+                        <p class="mb-4">Ready to rally the resources you need to do good? Crowdup offers project, recurring and debt crowdfunding. We can even help you design a great campaign to give you the highest chance to succeed!</p>
+                        <a href="#" class="text-fynd-orange font-semibold hover:underline">See crowdfunding options</a>
+                    </div>
+                </div>
+                <div class="bg-gray-100 rounded-lg overflow-hidden">
+                    <img src="parter.png" alt="Partnerships" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Partnerships</h3>
+                        <p class="mb-4">Crowdup partners with leading brands, institutions and governments to support changemakers. We accelerate change through challenges, accelerators and funding programs.</p>
+                        <a href="#" class="text-fynd-orange font-semibold hover:underline">Find out how we can work together</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center text-gray-900">Fundraisers In Your Community</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="1st.png" alt="Fundraiser 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-900">Video turns life into moving art.</h3>
+                        <p class="text-gray-600 mb-4">FILM & VIDEOS</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-gray-900">$6425 raised</span>
+                            <span class="text-gray-600">2325 donations</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="22nd.png" alt="Fundraiser 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-900">Eradicating hunger starts with feeding hope..</h3>
+                        <p class="text-gray-600 mb-4">MEDICAL</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-gray-900">$57116 raised</span>
+                            <span class="text-gray-600">5912 donations</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="3rd.png" alt="Fundraiser 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-900">Knowledge is the script, and education directs our story</h3>
+                        <p class="text-gray-600 mb-4">EDUCATION</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-gray-900">$7012 raised</span>
+                            <span class="text-gray-600">3500 donations</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-fynd-orange text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8">Ready To Get Started? Join Thousands Of Others Today.</h2>
+            <div class="flex justify-center space-x-4">
+                <a href="#" class="bg-white text-fynd-orange px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-300">Start a Campaign</a>
+                <a href="#" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-fynd-orange transition-colors duration-300">How it Works</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const header = document.getElementById('header');
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                header.classList.add('bg-gray-900/80', 'backdrop-blur-md');
+            } else {
+                header.classList.remove('bg-gray-900/80', 'backdrop-blur-md');
+            }
+        });
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        const animateElements = document.querySelectorAll('.animate-fade-in-up');
+        animateElements.forEach((el, index) => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            el.style.transitionDelay = `${index * 0.2}s`;
+            setTimeout(()=> {
+                el.style.opacity = '1';
+                el.style.transform = 'translateY(0)';
+            }, 100);
+        });
+    </script>
+</body>
+</html>
